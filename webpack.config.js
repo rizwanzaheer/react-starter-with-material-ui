@@ -11,7 +11,7 @@ const cssProductionConfig = ExtractTextPlugin.extract({
 });
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/index.jsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].bundle.js',
@@ -53,11 +53,11 @@ module.exports = {
     stats: 'errors-only',
     hot: true,
     open: false,
-    port: 9000,
+    port: 4000,
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Main Editor',
+      title: 'Project Demo',
       minify: {
         collapseWhitespace: isProduction,
       },
