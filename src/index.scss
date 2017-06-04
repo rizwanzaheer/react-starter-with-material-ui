@@ -1,0 +1,77 @@
+.heading{
+  color: red;
+}
+#logo{
+	height: 100px;width: 100px;
+}
+
+////////////////////////////////////////////////
+//               variables                    //
+////////////////////////////////////////////////
+
+$primary-color : rgb(14,139,223) ;
+$border-color: rgb(63,165,237);
+
+
+////////////////////////////////////////////////
+//               Navigation styling            //
+////////////////////////////////////////////////
+
+
+nav {
+  height: 60px !important;
+  line-height: 60px !important;
+  background-color: $primary-color;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  
+  .nav-wrapper{
+    a{
+      margin: 0px 10px;
+      //border-right: 2px solid $border-color;
+      //padding-right: 10px;
+    }
+  }
+}
+
+
+
+////////////////////////////////////////////////
+//             Main Section Styling           //
+////////////////////////////////////////////////
+
+
+
+
+
+
+////////////////////////////////////////////////
+//               footer styling               //
+////////////////////////////////////////////////
+
+footer{
+    background-color: $primary-color !important;
+    color: white;
+    padding: 0px !important;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    left: 0;
+    a{
+      color: white;
+      text-decoration-style: none;
+    }
+}
+
+/*
+  compile Sass to css
+  run on sass trminal 
+  sass --watch scss:css (inputfolder: outputfolder)
+  
+*/
